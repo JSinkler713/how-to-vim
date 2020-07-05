@@ -12,7 +12,7 @@ function OpeningDescription(props) {
     }, [])
     
     let trail = useTrail(reasons.length, {
-        delay: 3000,
+        delay: 3000,  
         from: {
           backgroundColor: "#f1f1f1",
           opacity: 0,
@@ -29,7 +29,7 @@ function OpeningDescription(props) {
       const values = trail.map((props, index) => {
         return(
           <animated.div key={index} style={props} className='box'>
-            <p className='reason'>Why use vim: {reasons[index]}</p>
+            <p className='reasons'>Why use vim: {reasons[index]}</p>
              <br />
           </animated.div>
         );

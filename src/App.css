@@ -71,3 +71,7 @@ h1 {
 	display: flex;
 	justify-content: center;
 }
+.reasons {
+	font-size: 2em;
+	font-family: 'Courier New', Courier, monospace;
+}

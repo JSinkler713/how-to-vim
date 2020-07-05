@@ -16,7 +16,9 @@ function App() {
       <div className='vidContainer'>
         <ReactPlayer className='reactPlayer' playing='true' loop='true' url='vim-examples/vimExample.mov' />
       </div>
-      <OpeningDescription />
+      <div className='descContainer'>
+        <OpeningDescription /> 
+      </div>
     </div>
   );
 }
