@@ -52,6 +52,11 @@ table {
 .App {
   background-color: rgb(50,120,50);
   color: white;
+  height: 100vh;
+}
+.vidContainer {
+	display: flex;
+	justify-content: center;
 }
 .reactPlayer {
   border-radius: 5px;
