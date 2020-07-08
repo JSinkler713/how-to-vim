@@ -1,5 +1,6 @@
 import React from 'react';
-import './App.css';
+//import './App.css';
+import './main.scss';
 import { Helmet } from 'react-helmet';
 import ReactPlayer from 'react-player';
 import Header from './Header'
@@ -14,7 +15,7 @@ function App() {
       </Helmet>
       <Header />
       <div className='vidContainer'>
-        <ReactPlayer className='reactPlayer' playing='true' loop='true' url='vim-examples/vimExample.mov' />
+        <ReactPlayer className='reactPlayer' playing='true' loop='true' volume='0' muted='true' controls='true' url='vim-examples/vimExample.mov' />
       </div>
       <div className='descContainer'>
         <OpeningDescription /> 

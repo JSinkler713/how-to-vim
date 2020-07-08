@@ -48,15 +48,26 @@ table {
 }
 
 /* CLEARING STYLES DONE */
+// adds some colors
+
+$primary-color : #54af05;
+$background-color : #040113;
 
 .App {
-  background-color: rgb(50,120,50);
-  color: white;
+  background-color: $background-color;
+  color: $primary-color;
   height: 100vh;
+  background: linear-gradient(
+                  to bottom,
+                  $background-color,
+                  $background-color,
+                  lighten($background-color, 15%) 50%,
+                  lighten($background-color, 15%)
+                );
 }
 .vidContainer {
-  display: flex;
-  justify-content: center;
+	display: flex;
+	justify-content: center;
 }
 .reactPlayer {
   border-radius: 5px;
